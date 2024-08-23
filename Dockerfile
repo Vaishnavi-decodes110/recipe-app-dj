@@ -1,4 +1,5 @@
 FROM python:3.9-alpine3.13
+RUN pip install flake8
 LABEL maintainer="vaishnavi"
 
 ENV PYTHONUNBUFFERED 1
