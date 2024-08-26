@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',  # app name
     'rest_framework', #framework that we are using
     'drf_spectacular',  #package for API documentation
+    'core',  # app name
 ]
 
 MIDDLEWARE = [
@@ -133,5 +133,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'core.User'  # changiing to our custom created user model
 
 REST_FRAMEWORK = { #this helps DEF to use this package and genreate schema
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }

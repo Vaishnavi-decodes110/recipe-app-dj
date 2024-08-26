@@ -23,11 +23,11 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     # OpenAPI schema
-    path('api/schema/', SpectacularSwaggerView.as_view(), name='schema'),
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
      # Swagger UI view
     path(
         'api/docs/',
         SpectacularSwaggerView.as_view(url_name='schema'),
-        name='api-docs'
+        name='api-docs',
     )
 ]
